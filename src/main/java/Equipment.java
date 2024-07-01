@@ -1,7 +1,11 @@
-public class Ingredients {
+
+public class Equipment {
+
 
     private int id;
+
     private String name;
+    private String localizedName;
     private String image;
 
     public int getId() {
@@ -20,6 +24,14 @@ public class Ingredients {
         this.name = name;
     }
 
+    public String getLocalizedName() {
+        return localizedName;
+    }
+
+    public void setLocalizedName(String localizedName) {
+        this.localizedName = localizedName;
+    }
+
     public String getImage() {
         return image;
     }
@@ -27,6 +39,5 @@ public class Ingredients {
     public void setImage(String image) {
         this.image = image;
     }
-
 
 }
