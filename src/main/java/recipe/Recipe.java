@@ -7,7 +7,7 @@ public class Recipe {
 
 
     private long id;
-    private String title;
+    private String name;
     private String image;
     private String steps;
 
@@ -15,7 +15,7 @@ public class Recipe {
         Map<String, Object> result = new HashMap<>();
 
         result.put("id", id);
-        result.put("title", title);
+        result.put("title", name);
         result.put("image", image);
         result.put("steps", steps);
         return result;
@@ -29,12 +29,12 @@ public class Recipe {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getImage() {
@@ -57,4 +57,14 @@ public class Recipe {
         return o instanceof Recipe && this.getId() == ((Recipe) o).getId();
     }
 
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Message{");
+        sb.append("id=").append(id);
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", image='").append(image).append('\'');
+        sb.append(", steps=").append(steps);
+        sb.append('}');
+        return sb.toString();
+    }
 }
