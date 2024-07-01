@@ -7,7 +7,7 @@ public class Connection {
         var sql = "CREATE TABLE products (" +
                 "    id SERIAL PRIMARY KEY," +
                 "    name VARCHAR(255) NOT NULL," +
-                "    price DECIMAL(10, 2) NOT NULL" +
+                "    image VARCHAR(255) NOT NULL" +
                 ");";
         try (var conn =  DB.connect();
              var stmt = conn.createStatement()) {
