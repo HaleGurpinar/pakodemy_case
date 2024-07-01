@@ -4,5 +4,4 @@ public interface RecipeModel {
 
     void getRecipe();
 
-
 }
