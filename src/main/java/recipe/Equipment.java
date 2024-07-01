@@ -1,3 +1,4 @@
+package recipe;
 
 public class Equipment {
 

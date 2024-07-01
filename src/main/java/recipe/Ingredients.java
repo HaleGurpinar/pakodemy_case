@@ -1,3 +1,5 @@
+package recipe;
+
 public class Ingredients {
 
     private int id;
