@@ -11,6 +11,6 @@ public class RecipeController {
 
     @RequestMapping(method = RequestMethod.GET)
     public void getRecipe() {
-       //findAll method
+       recipe.findByAll();
     }
 }
